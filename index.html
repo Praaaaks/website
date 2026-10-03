@@ -1,31 +1,266 @@
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Refresher for HTML and CSS</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
-    <body>
-        <nav class="navbar">
-            <h2>Refresher</h2>
-            <div class="links">
-                <a href="#">Home</a>
-                <a href="#">About</a>
-                <a href="#">Contact</a>
-            </div>
+    <meta
+        name="description"
+        content="Prakalpa's personal portfolio."
+    >
+
+    <title>Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <header class="navbar">
+        <a href="#" class="logo">Prakalpa Satyal</a>
+
+        <nav>
+            <a href="#work">Work</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
         </nav>
+    </header>
 
-        <section class="main">
-            <h1>Welcome</h1>
-            <p>Build something great</p>
-            <button class="button">Get Started</button>
+
+    <main>
+
+        <section class="hero">
+            <p class="eyebrow">SOFTWARE DEVELOPER</p>
+
+            <h1>
+                Building software,
+                solving problems.
+            </h1>
+
+            <p class="hero-description">
+                I build software projects across systems,
+                web development, and computer vision.
+            </p>
+
+            <div class="hero-actions">
+                <a href="#work" class="button primary">
+                    View my work
+                </a>
+
+                <a href="resume.pdf" class="button">
+                    Resume
+                </a>
+            </div>
         </section>
 
-        <section class="card-container">
-            <div class="card">Card 1</div>
-            <div class="card">Card 2</div>
-            <div class="card">Card 3</div>
+        <section id="work" class="section">
+
+            <div class="section-heading">
+                <span>01</span>
+                <h2>Selected Work</h2>
+            </div>
+
+            <div class="projects">
+
+                <article class="project">
+
+                    <div class="project-image">
+                        <span>PROJECT IMAGE</span>
+                    </div>
+
+                    <div class="project-content">
+
+                        <p class="project-type">
+                            RIDE-SHARING PLATFORM
+                        </p>
+
+                        <h3>Sahayatri</h3>
+
+                        <p>
+                            A university ride-sharing platform designed to connect drivers 
+                            and passengers with real-time communication. Built with a normalized 
+                            database architecture and Supabase Realtime for live messaging.
+                        </p>
+
+                        <div class="tags">
+                            <span>React-Native</span>
+                            <span>TypeScript</span>
+                            <span>Supabase</span>
+                            <span>PostgreSQL</span>
+                        </div>
+
+                        <div class="project-links">
+                            <a href="#">GitHub ↗</a>
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <article class="project">
+
+                    <div class="project-image">
+                        <span>PROJECT IMAGE</span>
+                    </div>
+
+                    <div class="project-content">
+
+                        <p class="project-type">
+                            DECENTRALIZED DISASTER INTELLIGENCE AND VERIFICATION PLATFORM
+                        </p>
+
+                        <h3>D-Brief</h3>
+
+                        <p>
+                            A disaster intelligence platform built around a scalable REST API 
+                            for processing real-time disaster reports, with an end-to-end 
+                            AI pipeline for disaster-related information processing.
+                        </p>
+
+                        <div class="tags">
+                            <span>Python</span>
+                            <span>FastAPI</span>
+                            <span>Next.js</span>
+                            <span>Transformers</span>
+                        </div>
+
+                        <div class="project-links">
+                            <a href="#">GitHub ↗</a>
+                        </div>
+
+                    </div>
+
+                </article>
+
+                <article class="project">
+
+                    <div class="project-image">
+                        <span>PROJECT IMAGE</span>
+                    </div>
+
+                    <div class="project-content">
+
+                        <p class="project-type">
+                            MULTILINGUAL HATE SPEECH DETECTION
+                        </p>
+
+                        <h3>GuardMeet</h3>
+
+                        <p>
+                            A Chrome extension for detecting harmful speech in virtual meetings 
+                            and classrooms. It combines real-time DOM inspection with streaming 
+                            audio processing and multilingual AI inference for English and Nepali.
+                        </p>
+
+                        <div class="tags">
+                            <span>JavaScript</span>
+                            <span>Chrome Extensio APIs</span>
+                            <span>XLM-RobBERTa</span>
+                            <span>Whisper</span>
+                        </div>
+
+                        <div class="project-links">
+                            <a href="#">GitHub ↗</a>
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
         </section>
 
-    </body>
+        <section id="about" class="section about">
+
+            <div class="section-heading">
+                <span>02</span>
+                <h2>About</h2>
+            </div>
+
+            <div class="about-content">
+
+                <p>
+                    I'm a software developer interested in
+                    understanding how systems work and building
+                    practical software with them.
+                </p>
+
+                <p>
+                    My interests span software engineering,
+                    computer vision, machine learning, and
+                    backend systems.
+                </p>
+
+            </div>
+
+        </section>
+
+        <section id="skills" class="section">
+
+            <div class="section-heading">
+                <span>03</span>
+                <h2>Skills</h2>
+            </div>
+
+            <div class="skills">
+
+                <div>
+                    <h3>Languages</h3>
+                    <p>Python · C++ · Go · JavaScript · SQL</p>
+                </div>
+
+                <div>
+                    <h3>Backend</h3>
+                    <p>FastAPI · PostgreSQL · REST APIs</p>
+                </div>
+
+                <div>
+                    <h3>Tools</h3>
+                    <p>Git · Docker · Linux · GitHub</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="contact" class="section contact">
+
+            <div class="section-heading">
+                <span>04</span>
+                <h2>Contact</h2>
+            </div>
+
+            <h2 class="contact-title">
+                Have a project
+                or opportunity?
+            </h2>
+
+            <a
+                class="contact-email"
+                href="mailto:praksatyal@email.com"
+            >
+                praksatyal@email.com
+            </a>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>© 2026 Prakalpa Satyal</p>
+
+        <div>
+            <a href="#">GitHub</a>
+            <a href="#">LinkedIn</a>
+        </div>
+    </footer>
+
+</body>
 </html>
